@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from localhost:60754/Provinces by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 10 Jul 2018 07:17:08 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Index - eLearning</title>
+    
+        <link rel="stylesheet" href="css/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="css/bootstrap/dist/css/bootstrap-theme.css" />
+        <link rel="stylesheet" href="css/site.css" />
+    
+    
+    <link href="css/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <script src="../code.jquery.com/jquery-2.2.4.min.js"
+            integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+            crossorigin="anonymous"></script>
+    <script src="../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="css/moment/moment.js"></script>   
+    <script src="js/custom.min.js"></script>
+    
+    <link href="css/animate.css/animate.min.css" rel="stylesheet">
+    <link href="css/nprogress/nprogress.css" rel="stylesheet" />
+    <link href="css/custom.min.css" rel="stylesheet" />
+    <script src="js/custom.js"></script>
+    
+    <script>
+        $(document).ready(function () {
+            $('.side-menu li').click(function () {
+                $('li').removeClass('active');
+                //If the panel was open and would be closed by this click, do not active it
+                if (!$(this).closest('li').find('.collapse').hasClass('in'))
+                    $(this).addClass('active');
+            });
+        });
+    </script>
+</head>
+<body class="nav-md">
+    <div class="container body">
+        <div class="main_container">
+            <div class="col-md-3 left_col">
+                <div class="left_col scroll-view">
+                    <div class="navbar nav_title" style="border: 0;">
+                        <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>PDC</span></a>
+                    </div>
+                    <div class="clearfix"></div>
+                    <!-- menu profile quick info -->
+                    <div class="profile clearfix">
+                        <div class="profile_pic">
+                            <img src="images/img.jpg" alt="..." class="img-circle profile_img">
+                        </div>
+                        <div class="profile_info">
+                            <span>Welcome,</span>
+                            <h2>John Doe</h2>
+                        </div>
+                    </div>
+                    <!-- /menu profile quick info -->
+                    <br>
+                    <!-- sidebar menu -->
+                    <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+                        <div class="menu_section">
+                            <ul class="nav side-menu" style="" id="accordion">
+                                <li>
+                                    <a href="index.html"><i class="fa fa-home"></i> Home <span class="fa fa-chevron-down"></span></a>
+                                </li>
+                                <li>
+                                    <a data-toggle="collapse" href="#collapseForm" data-parent="#menu_section"><i class="fa fa-edit"></i> Master Data <span class="fa fa-chevron-down"></span></a>
+                                    <div class="collapse" id="collapseForm" data-parent="#sidebar-menu">
+                                        <ul class="nav child_menu" style="display: block;">
+                                            <li><a href="Clients.html">Clients</a></li>
+                                            <li><a href="Applicants.html">Applicants</a></li>
+                                            <li><a href="Questions.html">Questions</a></li>
+                                        </ul>
+                                        <hr />
+                                        <ul class="nav child_menu" style="display: block;">
+                                            <li><a href="Provinces.html">Provinces</a></li>
+                                            <li><a href="Cities.html">Cities</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a data-toggle="collapse" href="#collapseLayout" data-parent="#menu_section"><i class="fa fa-clone"></i>Programs &amp; Batches <span class="fa fa-chevron-down"></span></a>
+                                    <div class="collapse" id="collapseLayout" data-parent="#menu_section">
+                                        <ul class="nav child_menu" style="display: block;">
+                                            <li><a href="Programs.html">Programs</a></li>
+                                            <li><a href="Batches.html">Batches</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a data-toggle="collapse" href="#collapseElement" data-parent="#menu_section"><i class="fa fa-key"></i> Access <span class="fa fa-chevron-down"></span></a>
+                                    <div class="collapse" id="collapseElement" data-parent="#sidebar-menu">
+                                        <ul class="nav child_menu" style="display: block;">
+                                            <li><a href="Groups.html">Groups</a></li>
+                                            <li><a href="Users.html">Users</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a data-toggle="collapse" href="#collapseTables" data-parent="#menu_section"><i class="fa fa-table"></i> Reports <span class="fa fa-chevron-down"></span></a>
+                                    <div class="collapse" id="collapseTables" data-parent="#menu_section">
+                                        <ul class="nav child_menu" style="display: block;">
+                                            <li><a href="Reports/Summary.html">Summary</a></li>
+                                            <li><a href="Reports/Detail.html">Details</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li style="display:none;">
+                                    <a data-toggle="collapse" href="#collapsePresentation" data-parent="#menu_section"><i class="fa fa-bar-chart-o"></i> Data Presentation <span class="fa fa-chevron-down"></span></a>
+                                    <div class="collapse" id="collapsePresentation" data-parent="#menu_section">
+                                        <ul class="nav child_menu" style="display: block;">
+                                            <li><a href="chartjs.html">Chart JS</a></li>
+                                            <li><a href="chartjs2.html">Chart JS2</a></li>
+                                            <li><a href="morisjs.html">Moris JS</a></li>
+                                            <li><a href="echarts.html">ECharts</a></li>
+                                            <li><a href="other_charts.html">Other Charts</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="menu_section" style="display:none;">
+                            <h3>Live On</h3>
+                            <ul class="nav side-menu">
+                                <li>
+                                    <a data-toggle="collapse" href="#collapseAdditional" data-parent="#menu_section"><i class="fa fa-bug"></i> Additional Pages <span class="fa fa-chevron-down"></span></a>
+                                    <div class="collapse" id="collapseAdditional" data-parent="#menu_section">
+                                        <ul class="nav child_menu" style="display: block;">
+                                            <li><a href="e_commerce.html">E-commerce</a></li>
+                                            <li><a href="projects.html">Projects</a></li>
+                                            <li><a href="project_detail.html">Project Detail</a></li>
+                                            <li><a href="contacts.html">Contacts</a></li>
+                                            <li><a href="profile.html">Profile</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a data-toggle="collapse" href="#collapseExtra" data-parent="#menu_section"><i class="fa fa-windows"></i> Extras <span class="fa fa-chevron-down"></span></a>
+                                    <div class="collapse" id="collapseExtra" data-parent="#menu_section">
+                                        <ul class="nav child_menu" style="display: block;">
+                                            <li><a href="page_403.html">403 Error</a></li>
+                                            <li><a href="page_404.html">404 Error</a></li>
+                                            <li><a href="page_500.html">500 Error</a></li>
+                                            <li><a href="plain_page.html">Plain Page</a></li>
+                                            <li><a href="login.html">Login Page</a></li>
+                                            <li><a href="pricing_tables.html">Pricing Tables</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a data-toggle="collapse" href="#collapseMultiLevel" data-parent="#menu_section"><i class="fa fa-sitemap"></i> Multilevel Menu <span class="fa fa-chevron-down"></span></a>
+                                    <div class="collapse" id="collapseMultiLevel" data-parent="#menu_section">
+                                        <ul class="nav child_menu" style="display: block;">
+                                            <li>
+                                                <a href="#level1_1" data-toggle="collapse" data-parent="#menu_section">Level One</a>
+                                            </li>
+                                            <li>
+                                                <a>Level One<span class="fa fa-chevron-down"></span></a>
+                                                <div class="collapse" id="level1_1">
+                                                    <ul class="nav child_menu" style="display: block;">
+                                                        <li class="sub_menu">
+                                                            <a href="level2.html">Level Two</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#level2_1">Level Two</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#level2_2">Level Two</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="#level1_2">Level One</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="javascript:void(0)"><i class="fa fa-laptop"></i> Landing Page <span class="label label-success pull-right">Coming Soon</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- /sidebar menu -->
+                    <!-- /menu footer buttons -->
+                    <div class="sidebar-footer hidden-small" style="display:none;">
+                        <a data-toggle="tooltip" data-placement="top" title="" data-original-title="Settings">
+                            <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+                        </a>
+                        <a data-toggle="tooltip" data-placement="top" title="" data-original-title="FullScreen">
+                            <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+                        </a>
+                        <a data-toggle="tooltip" data-placement="top" title="" data-original-title="Lock">
+                            <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+                        </a>
+                        <a data-toggle="tooltip" data-placement="top" title="" href="login.html" data-original-title="Logout">
+                            <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+                        </a>
+                    </div>
+                    <!-- /menu footer buttons -->
+                </div>
+            </div>
+            <div class="top_nav">
+                <div class="nav_menu">
+                    <nav>
+                        <div class="nav toggle invisible">
+                            <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+                        </div>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="">
+                                <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                    <img src="images/img.jpg" alt="">John Doe
+                                    <span class=" fa fa-angle-down"></span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-usermenu pull-right">
+                                    <li><a href="javascript:;"> Profile</a></li>
+                                    <li>
+                                        <a href="javascript:;">
+                                            <span class="badge bg-red pull-right">50%</span>
+                                            <span>Settings</span>
+                                        </a>
+                                    </li>
+                                    <li><a href="javascript:;">Help</a></li>
+                                    <li><a href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
+                                </ul>
+                            </li>
+                            <li role="presentation" class="dropdown invisible">
+                                <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa fa-envelope-o"></i>
+                                    <span class="badge bg-green">6</span>
+                                </a>
+                                <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
+                                    <li>
+                                        <a>
+                                            <span class="image"><img src="images/img.jpg" alt="Profile Image"></span>
+                                            <span>
+                                                <span>John Smith</span>
+                                                <span class="time">3 mins ago</span>
+                                            </span>
+                                            <span class="message">
+                                                Film festivals used to be do-or-die moments for movie makers. They were where...
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a>
+                                            <span class="image"><img src="images/img.jpg" alt="Profile Image"></span>
+                                            <span>
+                                                <span>John Smith</span>
+                                                <span class="time">3 mins ago</span>
+                                            </span>
+                                            <span class="message">
+                                                Film festivals used to be do-or-die moments for movie makers. They were where...
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a>
+                                            <span class="image"><img src="images/img.jpg" alt="Profile Image"></span>
+                                            <span>
+                                                <span>John Smith</span>
+                                                <span class="time">3 mins ago</span>
+                                            </span>
+                                            <span class="message">
+                                                Film festivals used to be do-or-die moments for movie makers. They were where...
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a>
+                                            <span class="image"><img src="images/img.jpg" alt="Profile Image"></span>
+                                            <span>
+                                                <span>John Smith</span>
+                                                <span class="time">3 mins ago</span>
+                                            </span>
+                                            <span class="message">
+                                                Film festivals used to be do-or-die moments for movie makers. They were where...
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="text-center">
+                                            <a>
+                                                <strong>See All Alerts</strong>
+                                                <i class="fa fa-angle-right"></i>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="right_col" role="main" style="min-height: 1006px;">
+                
+<h2>Index</h2>
+
+<p>
+    <a href="Provinces/Create.html">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Province Name</th>
+            <th>Create by</th>
+            <th>Create Date</th>
+            <th>Edit By</th>
+            <th>Edit Date</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+            <tr>
+                <td>
+                    DKI Jakarta
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    06 Feb 2018 00:00
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    06 Feb 2018 00:00
+                </td>
+                <td>
+                    <a href="Provinces/Edit681a.html?id=1">Edit</a> |
+                    <a href="Provinces/Details681a.html?id=1">Details</a> |
+                    <a href="Provinces/Delete681a.html?id=1">Delete</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Aceh
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    06 Mar 2018 00:00
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    06 Mar 2018 00:00
+                </td>
+                <td>
+                    <a href="Provinces/Edit0b30.html?id=2">Edit</a> |
+                    <a href="Provinces/Details0b30.html?id=2">Details</a> |
+                    <a href="Provinces/Delete0b30.html?id=2">Delete</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Bali
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    06 Mar 2018 00:00
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    06 Mar 2018 00:00
+                </td>
+                <td>
+                    <a href="Provinces/Editd708.html?id=3">Edit</a> |
+                    <a href="Provinces/Detailsd708.html?id=3">Details</a> |
+                    <a href="Provinces/Deleted708.html?id=3">Delete</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Banten
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    06 Mar 2018 00:00
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    06 Mar 2018 00:00
+                </td>
+                <td>
+                    <a href="Provinces/Editdcfd.html?id=4">Edit</a> |
+                    <a href="Provinces/Detailsdcfd.html?id=4">Details</a> |
+                    <a href="Provinces/Deletedcfd.html?id=4">Delete</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Bengkulu
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    06 Mar 2018 00:00
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    06 Mar 2018 00:00
+                </td>
+                <td>
+                    <a href="Provinces/Editd61c.html?id=5">Edit</a> |
+                    <a href="Provinces/Detailsd61c.html?id=5">Details</a> |
+                    <a href="Provinces/Deleted61c.html?id=5">Delete</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Gorontalo
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    03 Jun 2018 08:32
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    03 Jun 2018 08:32
+                </td>
+                <td>
+                    <a href="Provinces/Edit3a9f.html?id=6">Edit</a> |
+                    <a href="Provinces/Details3a9f.html?id=6">Details</a> |
+                    <a href="Provinces/Delete3a9f.html?id=6">Delete</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Jambi
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    03 Jun 2018 08:36
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    03 Jun 2018 08:36
+                </td>
+                <td>
+                    <a href="Provinces/Edit8803.html?id=7">Edit</a> |
+                    <a href="Provinces/Details8803.html?id=7">Details</a> |
+                    <a href="Provinces/Delete8803.html?id=7">Delete</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Jawa Barat
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    03 Jun 2018 08:36
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    03 Jun 2018 08:36
+                </td>
+                <td>
+                    <a href="Provinces/Editc3c9.html?id=8">Edit</a> |
+                    <a href="Provinces/Detailsc3c9.html?id=8">Details</a> |
+                    <a href="Provinces/Deletec3c9.html?id=8">Delete</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Jawa Tengah
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    03 Jun 2018 08:38
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    03 Jun 2018 08:38
+                </td>
+                <td>
+                    <a href="Provinces/Edit5255.html?id=9">Edit</a> |
+                    <a href="Provinces/Details5255.html?id=9">Details</a> |
+                    <a href="Provinces/Delete5255.html?id=9">Delete</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Jawa Timur
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    03 Jun 2018 08:38
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    03 Jun 2018 08:38
+                </td>
+                <td>
+                    <a href="Provinces/Editf41b.html?id=10">Edit</a> |
+                    <a href="Provinces/Detailsf41b.html?id=10">Details</a> |
+                    <a href="Provinces/Deletef41b.html?id=10">Delete</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Kalimantan Barat
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    03 Jun 2018 08:38
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    03 Jun 2018 08:38
+                </td>
+                <td>
+                    <a href="Provinces/Edit0055.html?id=11">Edit</a> |
+                    <a href="Provinces/Details0055.html?id=11">Details</a> |
+                    <a href="Provinces/Delete0055.html?id=11">Delete</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Kalimantan Selatan
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    03 Jun 2018 08:38
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    03 Jun 2018 08:38
+                </td>
+                <td>
+                    <a href="Provinces/Edit4ef9.html?id=12">Edit</a> |
+                    <a href="Provinces/Details4ef9.html?id=12">Details</a> |
+                    <a href="Provinces/Delete4ef9.html?id=12">Delete</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Kalimantan Tengah
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    03 Jun 2018 08:39
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    03 Jun 2018 08:39
+                </td>
+                <td>
+                    <a href="Provinces/Edit6e03.html?id=13">Edit</a> |
+                    <a href="Provinces/Details6e03.html?id=13">Details</a> |
+                    <a href="Provinces/Delete6e03.html?id=13">Delete</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Kalimantan Timur
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    03 Jun 2018 08:39
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    03 Jun 2018 08:39
+                </td>
+                <td>
+                    <a href="Provinces/Edit87f1.html?id=14">Edit</a> |
+                    <a href="Provinces/Details87f1.html?id=14">Details</a> |
+                    <a href="Provinces/Delete87f1.html?id=14">Delete</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Kalimantan Utara
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    03 Jun 2018 08:39
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    03 Jun 2018 08:39
+                </td>
+                <td>
+                    <a href="Provinces/Edit7429.html?id=15">Edit</a> |
+                    <a href="Provinces/Details7429.html?id=15">Details</a> |
+                    <a href="Provinces/Delete7429.html?id=15">Delete</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Kepulauan Bangka Belitung
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    03 Jun 2018 08:39
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    03 Jun 2018 08:39
+                </td>
+                <td>
+                    <a href="Provinces/Edit2728.html?id=16">Edit</a> |
+                    <a href="Provinces/Details2728.html?id=16">Details</a> |
+                    <a href="Provinces/Delete2728.html?id=16">Delete</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Kepulauan Riau
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    03 Jun 2018 08:39
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    03 Jun 2018 08:39
+                </td>
+                <td>
+                    <a href="Provinces/Edit190a.html?id=17">Edit</a> |
+                    <a href="Provinces/Details190a.html?id=17">Details</a> |
+                    <a href="Provinces/Delete190a.html?id=17">Delete</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Lampung
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    03 Jun 2018 08:39
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    03 Jun 2018 08:39
+                </td>
+                <td>
+                    <a href="Provinces/Edite371.html?id=18">Edit</a> |
+                    <a href="Provinces/Detailse371.html?id=18">Details</a> |
+                    <a href="Provinces/Deletee371.html?id=18">Delete</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Maluku
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    03 Jun 2018 08:39
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    03 Jun 2018 08:39
+                </td>
+                <td>
+                    <a href="Provinces/Edita9bc.html?id=19">Edit</a> |
+                    <a href="Provinces/Detailsa9bc.html?id=19">Details</a> |
+                    <a href="Provinces/Deletea9bc.html?id=19">Delete</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Maluku Utara
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    03 Jun 2018 08:39
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    03 Jun 2018 08:39
+                </td>
+                <td>
+                    <a href="Provinces/Edite5cc.html?id=20">Edit</a> |
+                    <a href="Provinces/Detailse5cc.html?id=20">Details</a> |
+                    <a href="Provinces/Deletee5cc.html?id=20">Delete</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Nusa Tenggara Barat
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    03 Jun 2018 08:40
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    03 Jun 2018 08:40
+                </td>
+                <td>
+                    <a href="Provinces/Edit6258.html?id=21">Edit</a> |
+                    <a href="Provinces/Details6258.html?id=21">Details</a> |
+                    <a href="Provinces/Delete6258.html?id=21">Delete</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Nusa Tenggara Timur
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    03 Jun 2018 08:40
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    03 Jun 2018 08:40
+                </td>
+                <td>
+                    <a href="Provinces/Edit2e5f.html?id=22">Edit</a> |
+                    <a href="Provinces/Details2e5f.html?id=22">Details</a> |
+                    <a href="Provinces/Delete2e5f.html?id=22">Delete</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Papua
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    03 Jun 2018 08:40
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    03 Jun 2018 08:40
+                </td>
+                <td>
+                    <a href="Provinces/Edit9c8a.html?id=23">Edit</a> |
+                    <a href="Provinces/Details9c8a.html?id=23">Details</a> |
+                    <a href="Provinces/Delete9c8a.html?id=23">Delete</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Papua Barat
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    03 Jun 2018 08:40
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    03 Jun 2018 08:40
+                </td>
+                <td>
+                    <a href="Provinces/Editea25.html?id=24">Edit</a> |
+                    <a href="Provinces/Detailsea25.html?id=24">Details</a> |
+                    <a href="Provinces/Deleteea25.html?id=24">Delete</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Riau
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    03 Jun 2018 08:40
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    03 Jun 2018 08:40
+                </td>
+                <td>
+                    <a href="Provinces/Edit9e43.html?id=25">Edit</a> |
+                    <a href="Provinces/Details9e43.html?id=25">Details</a> |
+                    <a href="Provinces/Delete9e43.html?id=25">Delete</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Sulawesi Barat
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    03 Jun 2018 08:41
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    03 Jun 2018 08:41
+                </td>
+                <td>
+                    <a href="Provinces/Edit3162.html?id=26">Edit</a> |
+                    <a href="Provinces/Details3162.html?id=26">Details</a> |
+                    <a href="Provinces/Delete3162.html?id=26">Delete</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Sulawesi Selatan
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    03 Jun 2018 08:42
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    03 Jun 2018 08:42
+                </td>
+                <td>
+                    <a href="Provinces/Edit3773.html?id=27">Edit</a> |
+                    <a href="Provinces/Details3773.html?id=27">Details</a> |
+                    <a href="Provinces/Delete3773.html?id=27">Delete</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Sulawesi Tengah
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    03 Jun 2018 08:42
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    03 Jun 2018 08:42
+                </td>
+                <td>
+                    <a href="Provinces/Edit1434.html?id=28">Edit</a> |
+                    <a href="Provinces/Details1434.html?id=28">Details</a> |
+                    <a href="Provinces/Delete1434.html?id=28">Delete</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Sulawesi Tenggara
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    03 Jun 2018 08:42
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    03 Jun 2018 08:42
+                </td>
+                <td>
+                    <a href="Provinces/Edit95dc.html?id=29">Edit</a> |
+                    <a href="Provinces/Details95dc.html?id=29">Details</a> |
+                    <a href="Provinces/Delete95dc.html?id=29">Delete</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Sulawesi Utara
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    03 Jun 2018 08:42
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    03 Jun 2018 08:42
+                </td>
+                <td>
+                    <a href="Provinces/Edit8bcf.html?id=30">Edit</a> |
+                    <a href="Provinces/Details8bcf.html?id=30">Details</a> |
+                    <a href="Provinces/Delete8bcf.html?id=30">Delete</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Sumatera Barat
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    03 Jun 2018 08:42
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    03 Jun 2018 08:42
+                </td>
+                <td>
+                    <a href="Provinces/Edit6fb5.html?id=31">Edit</a> |
+                    <a href="Provinces/Details6fb5.html?id=31">Details</a> |
+                    <a href="Provinces/Delete6fb5.html?id=31">Delete</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Sumatera Selatan
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    03 Jun 2018 08:43
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    03 Jun 2018 08:43
+                </td>
+                <td>
+                    <a href="Provinces/Editdac1.html?id=32">Edit</a> |
+                    <a href="Provinces/Detailsdac1.html?id=32">Details</a> |
+                    <a href="Provinces/Deletedac1.html?id=32">Delete</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Sumatera Utara
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    03 Jun 2018 08:43
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    03 Jun 2018 08:43
+                </td>
+                <td>
+                    <a href="Provinces/Editef73.html?id=33">Edit</a> |
+                    <a href="Provinces/Detailsef73.html?id=33">Details</a> |
+                    <a href="Provinces/Deleteef73.html?id=33">Delete</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Yogyakarta
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    03 Jun 2018 08:43
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    03 Jun 2018 08:43
+                </td>
+                <td>
+                    <a href="Provinces/Editd5e8.html?id=34">Edit</a> |
+                    <a href="Provinces/Detailsd5e8.html?id=34">Details</a> |
+                    <a href="Provinces/Deleted5e8.html?id=34">Delete</a>
+                </td>
+            </tr>
+    </tbody>
+</table>
+
+                <br>
+            </div>
+            <footer>
+                <p>&copy; 2017 - PDC.Web</p>
+                <div class="clearfix"></div>
+            </footer>
+        </div>
+    </div>
+
+    
+        <script src="js/sited534.js?v=EWaMeWsJBYWmL2g_KkgXZQ5nPe-a3Ichp0LEgzXczKo"></script>
+    
+    
+
+    
+</body>
+
+<!-- Mirrored from localhost:60754/Provinces by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 10 Jul 2018 07:22:52 GMT -->
+</html>

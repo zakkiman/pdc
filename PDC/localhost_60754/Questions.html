@@ -1,0 +1,1206 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from localhost:60754/Questions by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 10 Jul 2018 07:12:52 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Questions - eLearning</title>
+    
+        <link rel="stylesheet" href="css/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="css/bootstrap/dist/css/bootstrap-theme.css" />
+        <link rel="stylesheet" href="css/site.css" />
+    
+    
+    <link href="css/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <script src="../code.jquery.com/jquery-2.2.4.min.js"
+            integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+            crossorigin="anonymous"></script>
+    <script src="../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="css/moment/moment.js"></script>   
+    <script src="js/custom.min.js"></script>
+    
+    <link href="css/animate.css/animate.min.css" rel="stylesheet">
+    <link href="css/nprogress/nprogress.css" rel="stylesheet" />
+    <link href="css/custom.min.css" rel="stylesheet" />
+    <script src="js/custom.js"></script>
+    
+    <style type="text/css">
+        .Requested {
+            background-color: grey;
+            color: #fff;
+        }
+
+        .Approved {
+            background-color: green;
+            color: #fff;
+        }
+
+        .Rejected {
+            background-color: red;
+            color: #fff;
+        }
+
+        .Pending {
+            background-color: lime;
+            color: #fff;
+        }
+    </style>
+
+    <script>
+        $(document).ready(function () {
+            $('.side-menu li').click(function () {
+                $('li').removeClass('active');
+                //If the panel was open and would be closed by this click, do not active it
+                if (!$(this).closest('li').find('.collapse').hasClass('in'))
+                    $(this).addClass('active');
+            });
+        });
+    </script>
+</head>
+<body class="nav-md">
+    <div class="container body">
+        <div class="main_container">
+            <div class="col-md-3 left_col">
+                <div class="left_col scroll-view">
+                    <div class="navbar nav_title" style="border: 0;">
+                        <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>PDC</span></a>
+                    </div>
+                    <div class="clearfix"></div>
+                    <!-- menu profile quick info -->
+                    <div class="profile clearfix">
+                        <div class="profile_pic">
+                            <img src="images/img.jpg" alt="..." class="img-circle profile_img">
+                        </div>
+                        <div class="profile_info">
+                            <span>Welcome,</span>
+                            <h2>John Doe</h2>
+                        </div>
+                    </div>
+                    <!-- /menu profile quick info -->
+                    <br>
+                    <!-- sidebar menu -->
+                    <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+                        <div class="menu_section">
+                            <ul class="nav side-menu" style="" id="accordion">
+                                <li>
+                                    <a href="index.html"><i class="fa fa-home"></i> Home <span class="fa fa-chevron-down"></span></a>
+                                </li>
+                                <li>
+                                    <a data-toggle="collapse" href="#collapseForm" data-parent="#menu_section"><i class="fa fa-edit"></i> Master Data <span class="fa fa-chevron-down"></span></a>
+                                    <div class="collapse" id="collapseForm" data-parent="#sidebar-menu">
+                                        <ul class="nav child_menu" style="display: block;">
+                                            <li><a href="Clients.html">Clients</a></li>
+                                            <li><a href="Applicants.html">Applicants</a></li>
+                                            <li><a href="Questions.html">Questions</a></li>
+                                        </ul>
+                                        <hr />
+                                        <ul class="nav child_menu" style="display: block;">
+                                            <li><a href="Provinces.html">Provinces</a></li>
+                                            <li><a href="Cities.html">Cities</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a data-toggle="collapse" href="#collapseLayout" data-parent="#menu_section"><i class="fa fa-clone"></i>Programs &amp; Batches <span class="fa fa-chevron-down"></span></a>
+                                    <div class="collapse" id="collapseLayout" data-parent="#menu_section">
+                                        <ul class="nav child_menu" style="display: block;">
+                                            <li><a href="Programs.html">Programs</a></li>
+                                            <li><a href="Batches.html">Batches</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a data-toggle="collapse" href="#collapseElement" data-parent="#menu_section"><i class="fa fa-key"></i> Access <span class="fa fa-chevron-down"></span></a>
+                                    <div class="collapse" id="collapseElement" data-parent="#sidebar-menu">
+                                        <ul class="nav child_menu" style="display: block;">
+                                            <li><a href="Groups.html">Groups</a></li>
+                                            <li><a href="Users.html">Users</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a data-toggle="collapse" href="#collapseTables" data-parent="#menu_section"><i class="fa fa-table"></i> Reports <span class="fa fa-chevron-down"></span></a>
+                                    <div class="collapse" id="collapseTables" data-parent="#menu_section">
+                                        <ul class="nav child_menu" style="display: block;">
+                                            <li><a href="Reports/Summary.html">Summary</a></li>
+                                            <li><a href="Reports/Detail.html">Details</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li style="display:none;">
+                                    <a data-toggle="collapse" href="#collapsePresentation" data-parent="#menu_section"><i class="fa fa-bar-chart-o"></i> Data Presentation <span class="fa fa-chevron-down"></span></a>
+                                    <div class="collapse" id="collapsePresentation" data-parent="#menu_section">
+                                        <ul class="nav child_menu" style="display: block;">
+                                            <li><a href="chartjs.html">Chart JS</a></li>
+                                            <li><a href="chartjs2.html">Chart JS2</a></li>
+                                            <li><a href="morisjs.html">Moris JS</a></li>
+                                            <li><a href="echarts.html">ECharts</a></li>
+                                            <li><a href="other_charts.html">Other Charts</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="menu_section" style="display:none;">
+                            <h3>Live On</h3>
+                            <ul class="nav side-menu">
+                                <li>
+                                    <a data-toggle="collapse" href="#collapseAdditional" data-parent="#menu_section"><i class="fa fa-bug"></i> Additional Pages <span class="fa fa-chevron-down"></span></a>
+                                    <div class="collapse" id="collapseAdditional" data-parent="#menu_section">
+                                        <ul class="nav child_menu" style="display: block;">
+                                            <li><a href="e_commerce.html">E-commerce</a></li>
+                                            <li><a href="projects.html">Projects</a></li>
+                                            <li><a href="project_detail.html">Project Detail</a></li>
+                                            <li><a href="contacts.html">Contacts</a></li>
+                                            <li><a href="profile.html">Profile</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a data-toggle="collapse" href="#collapseExtra" data-parent="#menu_section"><i class="fa fa-windows"></i> Extras <span class="fa fa-chevron-down"></span></a>
+                                    <div class="collapse" id="collapseExtra" data-parent="#menu_section">
+                                        <ul class="nav child_menu" style="display: block;">
+                                            <li><a href="page_403.html">403 Error</a></li>
+                                            <li><a href="page_404.html">404 Error</a></li>
+                                            <li><a href="page_500.html">500 Error</a></li>
+                                            <li><a href="plain_page.html">Plain Page</a></li>
+                                            <li><a href="login.html">Login Page</a></li>
+                                            <li><a href="pricing_tables.html">Pricing Tables</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a data-toggle="collapse" href="#collapseMultiLevel" data-parent="#menu_section"><i class="fa fa-sitemap"></i> Multilevel Menu <span class="fa fa-chevron-down"></span></a>
+                                    <div class="collapse" id="collapseMultiLevel" data-parent="#menu_section">
+                                        <ul class="nav child_menu" style="display: block;">
+                                            <li>
+                                                <a href="#level1_1" data-toggle="collapse" data-parent="#menu_section">Level One</a>
+                                            </li>
+                                            <li>
+                                                <a>Level One<span class="fa fa-chevron-down"></span></a>
+                                                <div class="collapse" id="level1_1">
+                                                    <ul class="nav child_menu" style="display: block;">
+                                                        <li class="sub_menu">
+                                                            <a href="level2.html">Level Two</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#level2_1">Level Two</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#level2_2">Level Two</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="#level1_2">Level One</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="javascript:void(0)"><i class="fa fa-laptop"></i> Landing Page <span class="label label-success pull-right">Coming Soon</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- /sidebar menu -->
+                    <!-- /menu footer buttons -->
+                    <div class="sidebar-footer hidden-small" style="display:none;">
+                        <a data-toggle="tooltip" data-placement="top" title="" data-original-title="Settings">
+                            <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+                        </a>
+                        <a data-toggle="tooltip" data-placement="top" title="" data-original-title="FullScreen">
+                            <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+                        </a>
+                        <a data-toggle="tooltip" data-placement="top" title="" data-original-title="Lock">
+                            <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+                        </a>
+                        <a data-toggle="tooltip" data-placement="top" title="" href="login.html" data-original-title="Logout">
+                            <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+                        </a>
+                    </div>
+                    <!-- /menu footer buttons -->
+                </div>
+            </div>
+            <div class="top_nav">
+                <div class="nav_menu">
+                    <nav>
+                        <div class="nav toggle invisible">
+                            <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+                        </div>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="">
+                                <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                    <img src="images/img.jpg" alt="">John Doe
+                                    <span class=" fa fa-angle-down"></span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-usermenu pull-right">
+                                    <li><a href="javascript:;"> Profile</a></li>
+                                    <li>
+                                        <a href="javascript:;">
+                                            <span class="badge bg-red pull-right">50%</span>
+                                            <span>Settings</span>
+                                        </a>
+                                    </li>
+                                    <li><a href="javascript:;">Help</a></li>
+                                    <li><a href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
+                                </ul>
+                            </li>
+                            <li role="presentation" class="dropdown invisible">
+                                <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa fa-envelope-o"></i>
+                                    <span class="badge bg-green">6</span>
+                                </a>
+                                <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
+                                    <li>
+                                        <a>
+                                            <span class="image"><img src="images/img.jpg" alt="Profile Image"></span>
+                                            <span>
+                                                <span>John Smith</span>
+                                                <span class="time">3 mins ago</span>
+                                            </span>
+                                            <span class="message">
+                                                Film festivals used to be do-or-die moments for movie makers. They were where...
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a>
+                                            <span class="image"><img src="images/img.jpg" alt="Profile Image"></span>
+                                            <span>
+                                                <span>John Smith</span>
+                                                <span class="time">3 mins ago</span>
+                                            </span>
+                                            <span class="message">
+                                                Film festivals used to be do-or-die moments for movie makers. They were where...
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a>
+                                            <span class="image"><img src="images/img.jpg" alt="Profile Image"></span>
+                                            <span>
+                                                <span>John Smith</span>
+                                                <span class="time">3 mins ago</span>
+                                            </span>
+                                            <span class="message">
+                                                Film festivals used to be do-or-die moments for movie makers. They were where...
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a>
+                                            <span class="image"><img src="images/img.jpg" alt="Profile Image"></span>
+                                            <span>
+                                                <span>John Smith</span>
+                                                <span class="time">3 mins ago</span>
+                                            </span>
+                                            <span class="message">
+                                                Film festivals used to be do-or-die moments for movie makers. They were where...
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="text-center">
+                                            <a>
+                                                <strong>See All Alerts</strong>
+                                                <i class="fa fa-angle-right"></i>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="right_col" role="main" style="min-height: 1006px;">
+                
+<h2>Question List</h2>
+
+<p>
+    <a href="Questions/Create.html">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Details</th>
+            <th>Domain</th>
+            <th>Type</th>
+            <th>Create By</th>
+            <th>Create Date</th>
+            <th>Edit By</th>
+            <th>Edit Date</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+                   <tr>
+                <td>1</td>
+                <td>
+                    <a href="Answers/Create3a9f.html?id=6" data-toggle="tooltip" title="Answer count: 5">Saya orang yang canggung dan tidak dikehendaki bila berada di lingkungan kerja maupun di lingkungan pergaulan</a>
+                </td>
+                <td>
+                    SELF IMAGE
+                </td>
+                <td>
+                    Avoid
+                </td>
+                <td>
+                    
+                </td>
+                <td>
+                    01 Jan 0001 00:0
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    07 Jul 2018 22:11
+                </td>
+                <td>
+                    <a href="Questions/Delete3a9f.html?id=6">Delete</a>
+                    <a href="Questions/Edit3a9f.html?id=6">Edit</a>
+                    <a href="Questions/Delete3a9f.html?id=6">Delete</a>
+                </td>
+            </tr>
+           <tr>
+                <td>2</td>
+                <td>
+                    <a href="Answers/Create8803.html?id=7" data-toggle="tooltip" title="Answer count: 5">Pada dasarnya orang lain suka mengkritik, tidak peduli merendahkan atau menolak</a>
+                </td>
+                <td>
+                    OBJECT REPRESENTATION
+                </td>
+                <td>
+                    Avoid
+                </td>
+                <td>
+                    
+                </td>
+                <td>
+                    01 Jan 0001 00:0
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    07 Jul 2018 22:12
+                </td>
+                <td>
+                    <a href="Questions/Delete8803.html?id=7">Delete</a>
+                    <a href="Questions/Edit8803.html?id=7">Edit</a>
+                    <a href="Questions/Delete8803.html?id=7">Delete</a>
+                </td>
+            </tr>
+           <tr>
+                <td>3</td>
+                <td>
+                    <a href="Answers/Createc3c9.html?id=8" data-toggle="tooltip" title="Answer count: 5">Saya tidak dapat menerima perasaan yang tidak menyenangkan</a>
+                </td>
+                <td>
+                    COGNITIVE STYLE
+                </td>
+                <td>
+                    Avoid
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    03 Jul 2018 14:34
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    07 Jul 2018 22:31
+                </td>
+                <td>
+                    <a href="Questions/Deletec3c9.html?id=8">Delete</a>
+                    <a href="Questions/Editc3c9.html?id=8">Edit</a>
+                    <a href="Questions/Deletec3c9.html?id=8">Delete</a>
+                </td>
+            </tr>
+           <tr>
+                <td>4</td>
+                <td>
+                    <a href="Answers/Create5255.html?id=9" data-toggle="tooltip" title="Answer count: 5">Saya tidak mau terlalu dekat dengan orang lain karena khawatir mereka anak mengetahui diri saya yang sebenarnya sehingga mereka menjauhi saya</a>
+                </td>
+                <td>
+                    INTERPERSONAL CONDUCT
+                </td>
+                <td>
+                    Avoid
+                </td>
+                <td>
+                    
+                </td>
+                <td>
+                    01 Jan 0001 00:0
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    07 Jul 2018 22:13
+                </td>
+                <td>
+                    <a href="Questions/Delete5255.html?id=9">Delete</a>
+                    <a href="Questions/Edit5255.html?id=9">Edit</a>
+                    <a href="Questions/Delete5255.html?id=9">Delete</a>
+                </td>
+            </tr>
+           <tr>
+                <td>5</td>
+                <td>
+                    <a href="Answers/Createf41b.html?id=10" data-toggle="tooltip" title="Answer count: 5">Saya tidak ingin orang lain melihat saya sebagai orang yang lemah dan rendah</a>
+                </td>
+                <td>
+                    COGNITIVE STYLE
+                </td>
+                <td>
+                    Avoid
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    03 Jul 2018 14:43
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    03 Jul 2018 16:36
+                </td>
+                <td>
+                    <a href="Questions/Deletef41b.html?id=10">Delete</a>
+                    <a href="Questions/Editf41b.html?id=10">Edit</a>
+                    <a href="Questions/Deletef41b.html?id=10">Delete</a>
+                </td>
+            </tr>
+           <tr>
+                <td>6</td>
+                <td>
+                    <a href="Answers/Create0055.html?id=11" data-toggle="tooltip" title="Answer count: 5">Apapun resikonya saya berusaha menghindari situasi yang tidak menyenangkan</a>
+                </td>
+                <td>
+                    COGNITIVE STYLE
+                </td>
+                <td>
+                    Avoid
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    03 Jul 2018 14:47
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    03 Jul 2018 16:37
+                </td>
+                <td>
+                    <a href="Questions/Delete0055.html?id=11">Delete</a>
+                    <a href="Questions/Edit0055.html?id=11">Edit</a>
+                    <a href="Questions/Delete0055.html?id=11">Delete</a>
+                </td>
+            </tr>
+           <tr>
+                <td>7</td>
+                <td>
+                    <a href="Answers/Create4ef9.html?id=12" data-toggle="tooltip" title="Answer count: 10">Bila saya merasa atau memikirkan sesuatu yang tidak menyenangkan, saya akan mengalihkan dengan cara memikirkan hal-hal lain</a>
+                </td>
+                <td>
+                    COGNITIVE STYLE
+                </td>
+                <td>
+                    Avoid
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    03 Jul 2018 14:57
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    03 Jul 2018 16:37
+                </td>
+                <td>
+                    <a href="Questions/Delete4ef9.html?id=12">Delete</a>
+                    <a href="Questions/Edit4ef9.html?id=12">Edit</a>
+                    <a href="Questions/Delete4ef9.html?id=12">Delete</a>
+                </td>
+            </tr>
+           <tr>
+                <td>8</td>
+                <td>
+                    <a href="Answers/Create87f1.html?id=14" data-toggle="tooltip" title="Answer count: 5">Sebisa mungkin saya harus menghindari situasi dimana saya menjadi pusat perhatian</a>
+                </td>
+                <td>
+                    SELF IMAGE
+                </td>
+                <td>
+                    Avoid
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    03 Jul 2018 15:39
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    07 Jul 2018 22:34
+                </td>
+                <td>
+                    <a href="Questions/Delete87f1.html?id=14">Delete</a>
+                    <a href="Questions/Edit87f1.html?id=14">Edit</a>
+                    <a href="Questions/Delete87f1.html?id=14">Delete</a>
+                </td>
+            </tr>
+           <tr>
+                <td>9</td>
+                <td>
+                    <a href="Answers/Create2728.html?id=16" data-toggle="tooltip" title="Answer count: 0">Perasaan yang tidak menyenangkan akan terus meningkat dan sulit untuk saya kendalikan</a>
+                </td>
+                <td>
+                    EXPRESSIVE BEHAVIOR
+                </td>
+                <td>
+                    Avoid
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    03 Jul 2018 15:43
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    07 Jul 2018 22:35
+                </td>
+                <td>
+                    <a href="Questions/Delete2728.html?id=16">Delete</a>
+                    <a href="Questions/Edit2728.html?id=16">Edit</a>
+                    <a href="Questions/Delete2728.html?id=16">Delete</a>
+                </td>
+            </tr>
+           <tr>
+                <td>10</td>
+                <td>
+                    <a href="Answers/Createe371.html?id=18" data-toggle="tooltip" title="Answer count: 0">Saya percaya bahwa kritikan orang lain itu benar</a>
+                </td>
+                <td>
+                    COGNITIVE STYLE
+                </td>
+                <td>
+                    Avoid
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    03 Jul 2018 16:44
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    03 Jul 2018 17:40
+                </td>
+                <td>
+                    <a href="Questions/Deletee371.html?id=18">Delete</a>
+                    <a href="Questions/Edite371.html?id=18">Edit</a>
+                    <a href="Questions/Deletee371.html?id=18">Delete</a>
+                </td>
+            </tr>
+           <tr>
+                <td>11</td>
+                <td>
+                    <a href="Answers/Createa9bc.html?id=19" data-toggle="tooltip" title="Answer count: 5">Lebih baik tidak melakukan apapun daripada mengalami kegagalan</a>
+                </td>
+                <td>
+                    COGNITIVE STYLE
+                </td>
+                <td>
+                    Avoid
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    03 Jul 2018 16:45
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    03 Jul 2018 16:45
+                </td>
+                <td>
+                    <a href="Questions/Deletea9bc.html?id=19">Delete</a>
+                    <a href="Questions/Edita9bc.html?id=19">Edit</a>
+                    <a href="Questions/Deletea9bc.html?id=19">Delete</a>
+                </td>
+            </tr>
+           <tr>
+                <td>12</td>
+                <td>
+                    <a href="Answers/Createe5cc.html?id=20" data-toggle="tooltip" title="Answer count: 0">Bila saya tidak memikirkan suatu masalah, maka saya tidak perlu melakukan suatu apapun</a>
+                </td>
+                <td>
+                    REGULATORY MECHANISM
+                </td>
+                <td>
+                    Avoid
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    03 Jul 2018 16:45
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    07 Jul 2018 22:36
+                </td>
+                <td>
+                    <a href="Questions/Deletee5cc.html?id=20">Delete</a>
+                    <a href="Questions/Edite5cc.html?id=20">Edit</a>
+                    <a href="Questions/Deletee5cc.html?id=20">Delete</a>
+                </td>
+            </tr>
+           <tr>
+                <td>13</td>
+                <td>
+                    <a href="Answers/Create6258.html?id=21" data-toggle="tooltip" title="Answer count: 5">Saya akan memutus suatu hubungan bila terdapat ketegangan dalam hubungan itu</a>
+                </td>
+                <td>
+                    INTERPERSONAL CONDUCT
+                </td>
+                <td>
+                    Avoid
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    03 Jul 2018 16:46
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    07 Jul 2018 22:37
+                </td>
+                <td>
+                    <a href="Questions/Delete6258.html?id=21">Delete</a>
+                    <a href="Questions/Edit6258.html?id=21">Edit</a>
+                    <a href="Questions/Delete6258.html?id=21">Delete</a>
+                </td>
+            </tr>
+           <tr>
+                <td>14</td>
+                <td>
+                    <a href="Answers/Create2e5f.html?id=22" data-toggle="tooltip" title="Answer count: 0">Bila saya mengabaikan suatu masalah, maka masalah itu akan berlalu dengan sendirinya</a>
+                </td>
+                <td>
+                    COGNITIVE STYLE
+                </td>
+                <td>
+                    Avoid
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    03 Jul 2018 16:49
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    03 Jul 2018 16:49
+                </td>
+                <td>
+                    <a href="Questions/Delete2e5f.html?id=22">Delete</a>
+                    <a href="Questions/Edit2e5f.html?id=22">Edit</a>
+                    <a href="Questions/Delete2e5f.html?id=22">Delete</a>
+                </td>
+            </tr>
+           <tr>
+                <td>15</td>
+                <td>
+                    <a href="Answers/Create9c8a.html?id=23" data-toggle="tooltip" title="Answer count: 0">Saya serba tidak berdaya dan lemah</a>
+                </td>
+                <td>
+                    SELF IMAGE
+                </td>
+                <td>
+                    Dependent
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    03 Jul 2018 16:49
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    07 Jul 2018 22:39
+                </td>
+                <td>
+                    <a href="Questions/Delete9c8a.html?id=23">Delete</a>
+                    <a href="Questions/Edit9c8a.html?id=23">Edit</a>
+                    <a href="Questions/Delete9c8a.html?id=23">Delete</a>
+                </td>
+            </tr>
+           <tr>
+                <td>16</td>
+                <td>
+                    <a href="Answers/Createea25.html?id=24" data-toggle="tooltip" title="Answer count: 0">Saya butuh seseorang yang setiap saat diperlukan bisa menolong saya atau pada saat sesuatu yang buruk terjadi</a>
+                </td>
+                <td>
+                    INTERPERSONAL CONDUCT
+                </td>
+                <td>
+                    Avoid
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    03 Jul 2018 16:50
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    07 Jul 2018 22:40
+                </td>
+                <td>
+                    <a href="Questions/Deleteea25.html?id=24">Delete</a>
+                    <a href="Questions/Editea25.html?id=24">Edit</a>
+                    <a href="Questions/Deleteea25.html?id=24">Delete</a>
+                </td>
+            </tr>
+           <tr>
+                <td>17</td>
+                <td>
+                    <a href="Answers/Create9e43.html?id=25" data-toggle="tooltip" title="Answer count: 0">Jika seseorang ingin menjadi penolong saya, maka sebaiknya orang tersebut bisa mengasuh, mendukung dan percaya diri</a>
+                </td>
+                <td>
+                    INTERPERSONAL CONDUCT
+                </td>
+                <td>
+                    Dependent
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    03 Jul 2018 16:51
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    07 Jul 2018 22:43
+                </td>
+                <td>
+                    <a href="Questions/Delete9e43.html?id=25">Delete</a>
+                    <a href="Questions/Edit9e43.html?id=25">Edit</a>
+                    <a href="Questions/Delete9e43.html?id=25">Delete</a>
+                </td>
+            </tr>
+           <tr>
+                <td>18</td>
+                <td>
+                    <a href="Answers/Create3162.html?id=26" data-toggle="tooltip" title="Answer count: 0">saya akan tidak berdaya bila ditinggal sendiri</a>
+                </td>
+                <td>
+                    INTERPERSONAL CONDUCT
+                </td>
+                <td>
+                    Dependent
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    03 Jul 2018 16:51
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    07 Jul 2018 22:45
+                </td>
+                <td>
+                    <a href="Questions/Delete3162.html?id=26">Delete</a>
+                    <a href="Questions/Edit3162.html?id=26">Edit</a>
+                    <a href="Questions/Delete3162.html?id=26">Delete</a>
+                </td>
+            </tr>
+           <tr>
+                <td>19</td>
+                <td>
+                    <a href="Answers/Create3773.html?id=27" data-toggle="tooltip" title="Answer count: 0">Pada dasarnya saya merasa sendiri - kecuali jika saya dapat menggantungkan diri saya kepada orang yang lebih kuat</a>
+                </td>
+                <td>
+                    INTERPERSONAL CONDUCT
+                </td>
+                <td>
+                    Dependent
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    03 Jul 2018 16:52
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    07 Jul 2018 22:46
+                </td>
+                <td>
+                    <a href="Questions/Delete3773.html?id=27">Delete</a>
+                    <a href="Questions/Edit3773.html?id=27">Edit</a>
+                    <a href="Questions/Delete3773.html?id=27">Delete</a>
+                </td>
+            </tr>
+           <tr>
+                <td>20</td>
+                <td>
+                    <a href="Answers/Create1434.html?id=28" data-toggle="tooltip" title="Answer count: 0">Hal terburuk yang mungkin terjadi pada diri saya dalah ditinggalkan</a>
+                </td>
+                <td>
+                    COGNITIVE STYLE
+                </td>
+                <td>
+                    Dependent
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    03 Jul 2018 16:52
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    07 Jul 2018 23:43
+                </td>
+                <td>
+                    <a href="Questions/Delete1434.html?id=28">Delete</a>
+                    <a href="Questions/Edit1434.html?id=28">Edit</a>
+                    <a href="Questions/Delete1434.html?id=28">Delete</a>
+                </td>
+            </tr>
+           <tr>
+                <td>21</td>
+                <td>
+                    <a href="Answers/Create95dc.html?id=29" data-toggle="tooltip" title="Answer count: 0">Bila saya tidak dicintai atau disayang, maka saya tidak akan bahagia</a>
+                </td>
+                <td>
+                    COGNITIVE STYLE
+                </td>
+                <td>
+                    Dependent
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    07 Jul 2018 23:45
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    07 Jul 2018 23:45
+                </td>
+                <td>
+                    <a href="Questions/Delete95dc.html?id=29">Delete</a>
+                    <a href="Questions/Edit95dc.html?id=29">Edit</a>
+                    <a href="Questions/Delete95dc.html?id=29">Delete</a>
+                </td>
+            </tr>
+           <tr>
+                <td>22</td>
+                <td>
+                    <a href="Answers/Create8bcf.html?id=30" data-toggle="tooltip" title="Answer count: 0">Saya tidak boleh melakukan hal yang menyinggung perasaan penolong saya</a>
+                </td>
+                <td>
+                    INTERPERSONAL CONDUCT
+                </td>
+                <td>
+                    Dependent
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    07 Jul 2018 23:47
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    07 Jul 2018 23:47
+                </td>
+                <td>
+                    <a href="Questions/Delete8bcf.html?id=30">Delete</a>
+                    <a href="Questions/Edit8bcf.html?id=30">Edit</a>
+                    <a href="Questions/Delete8bcf.html?id=30">Delete</a>
+                </td>
+            </tr>
+           <tr>
+                <td>23</td>
+                <td>
+                    <a href="Answers/Create6fb5.html?id=31" data-toggle="tooltip" title="Answer count: 0">Saya selalu patuh untuk membuat dia tetap baik pada saya</a>
+                </td>
+                <td>
+                    INTERPERSONAL CONDUCT
+                </td>
+                <td>
+                    Dependent
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    07 Jul 2018 23:48
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    07 Jul 2018 23:48
+                </td>
+                <td>
+                    <a href="Questions/Delete6fb5.html?id=31">Delete</a>
+                    <a href="Questions/Edit6fb5.html?id=31">Edit</a>
+                    <a href="Questions/Delete6fb5.html?id=31">Delete</a>
+                </td>
+            </tr>
+           <tr>
+                <td>24</td>
+                <td>
+                    <a href="Answers/Createdac1.html?id=32" data-toggle="tooltip" title="Answer count: 0">Saya harus menjaga hubungan dengan dia atau orang yang mendampingi saya</a>
+                </td>
+                <td>
+                    INTERPERSONAL CONDUCT
+                </td>
+                <td>
+                    Dependent
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    07 Jul 2018 23:50
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    07 Jul 2018 23:50
+                </td>
+                <td>
+                    <a href="Questions/Deletedac1.html?id=32">Delete</a>
+                    <a href="Questions/Editdac1.html?id=32">Edit</a>
+                    <a href="Questions/Deletedac1.html?id=32">Delete</a>
+                </td>
+            </tr>
+           <tr>
+                <td>25</td>
+                <td>
+                    <a href="Answers/Createef73.html?id=33" data-toggle="tooltip" title="Answer count: 0">Saya harus menjaga hubungan yang sedekat mungkin</a>
+                </td>
+                <td>
+                    COGNITIVE STYLE
+                </td>
+                <td>
+                    Dependent
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    07 Jul 2018 23:52
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    07 Jul 2018 23:52
+                </td>
+                <td>
+                    <a href="Questions/Deleteef73.html?id=33">Delete</a>
+                    <a href="Questions/Editef73.html?id=33">Edit</a>
+                    <a href="Questions/Deleteef73.html?id=33">Delete</a>
+                </td>
+            </tr>
+           <tr>
+                <td>26</td>
+                <td>
+                    <a href="Answers/Created5e8.html?id=34" data-toggle="tooltip" title="Answer count: 0">Saya tidak dapat membuat keputusan sendiri</a>
+                </td>
+                <td>
+                    SELF IMAGE
+                </td>
+                <td>
+                    Dependent
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    07 Jul 2018 23:54
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    07 Jul 2018 23:54
+                </td>
+                <td>
+                    <a href="Questions/Deleted5e8.html?id=34">Delete</a>
+                    <a href="Questions/Editd5e8.html?id=34">Edit</a>
+                    <a href="Questions/Deleted5e8.html?id=34">Delete</a>
+                </td>
+            </tr>
+           <tr>
+                <td>27</td>
+                <td>
+                    <a href="Answers/Create40ac.html?id=35" data-toggle="tooltip" title="Answer count: 0">Saya tidak mampu mengatasi sesuatu seperti orang lain lakukan</a>
+                </td>
+                <td>
+                    SELF IMAGE
+                </td>
+                <td>
+                    Dependent
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    07 Jul 2018 23:56
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    07 Jul 2018 23:56
+                </td>
+                <td>
+                    <a href="Questions/Delete40ac.html?id=35">Delete</a>
+                    <a href="Questions/Edit40ac.html?id=35">Edit</a>
+                    <a href="Questions/Delete40ac.html?id=35">Delete</a>
+                </td>
+            </tr>
+           <tr>
+                <td>28</td>
+                <td>
+                    <a href="Answers/Createf62c.html?id=36" data-toggle="tooltip" title="Answer count: 0">Saya membutuhkan bantuan orang lain untuk memutuskan atau mengatakan apa yang harus saya perbuat</a>
+                </td>
+                <td>
+                    SELF IMAGE
+                </td>
+                <td>
+                    Dependent
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    07 Jul 2018 23:57
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    07 Jul 2018 23:57
+                </td>
+                <td>
+                    <a href="Questions/Deletef62c.html?id=36">Delete</a>
+                    <a href="Questions/Editf62c.html?id=36">Edit</a>
+                    <a href="Questions/Deletef62c.html?id=36">Delete</a>
+                </td>
+            </tr>
+           <tr>
+                <td>29</td>
+                <td>
+                    <a href="Answers/Create4411.html?id=37" data-toggle="tooltip" title="Answer count: 0">Saya cukup mampu, tapi saya membutuhkan orang lain untuk membantu saya dalam mencapai tujuan saya</a>
+                </td>
+                <td>
+                    INTERPERSONAL CONDUCT
+                </td>
+                <td>
+                    Passive-agresive
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    08 Jul 2018 00:1
+                </td>
+                <td>
+                    System
+                </td>
+                <td>
+                    08 Jul 2018 00:1
+                </td>
+                <td>
+                    <a href="Questions/Delete4411.html?id=37">Delete</a>
+                    <a href="Questions/Edit4411.html?id=37">Edit</a>
+                    <a href="Questions/Delete4411.html?id=37">Delete</a>
+                </td>
+            </tr>
+    </tbody>
+</table>
+<p>
+    <a href="Questions/Create.html">Create New</a>
+</p>
+                <br>
+            </div>
+            <footer>
+                <p>&copy; 2017 - PDC.Web</p>
+                <div class="clearfix"></div>
+            </footer>
+        </div>
+    </div>
+
+    
+        <script src="js/sited534.js?v=EWaMeWsJBYWmL2g_KkgXZQ5nPe-a3Ichp0LEgzXczKo"></script>
+    
+    
+
+    
+</body>
+
+<!-- Mirrored from localhost:60754/Questions by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 10 Jul 2018 07:17:08 GMT -->
+</html>
