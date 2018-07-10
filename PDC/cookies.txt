@@ -1,5 +1,5 @@
 # HTTrack Website Copier Cookie File
 # This file format is compatible with Netscape cookies
-localhost:60754	TRUE	/	FALSE	1999999999	.AspNetCore.Antiforgery.YK4wUy1f5is	CfDJ8D7oK-oDWPBEkal2epRYJ5bgYNYtVhtDgMlIgDB5JU1BghzOCV814LNShSJYfYz6sinSDMO_kwCBhxLI33AlClwaGpwlNa15AbEavC2PuEmUG9QZAvzuDZzFTrcBy0Ktdtci3eAbEXbhpzJjJXp0N90
+localhost:60754	TRUE	/	FALSE	1999999999	.AspNetCore.Antiforgery.YK4wUy1f5is	CfDJ8D7oK-oDWPBEkal2epRYJ5Ymuw5MnWdmsPRFgxWdKKRe5HxPiXUJU3gn5qFweWzdVaLDXgsIU9KcxTpf1zLLoG5YrtFM8nSoI0AanbSstPD8Xa2GsbinN8nMLxj2srQS7ETMsdl5D1dJkeD6QX9oMA0
 localhost:60754	TRUE	/	FALSE	1999999999	samesite	strict
 
